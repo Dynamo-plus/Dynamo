@@ -236,6 +236,9 @@ a{
     text-align: center;
 }
 
+.title{
+    font-size: 1.2rem;
+}
 .project a{
     color: #a8aff7;
     font-size: 16px;
