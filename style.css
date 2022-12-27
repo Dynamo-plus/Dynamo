@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000211;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.479);
+    color: #a8aff7;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn a{
+    color: #a8aff7;
+    transition: all 0.3s ease;
+}
+
+.btn a:hover{
+    color: white;
+}
+
+.btn:hover{
+    background: none;
+    outline: 2px solid #a8aff7;
+    color: white;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero__container{
+    height: 100vh;
+    background: url('./assets/hero_background.jpg');
+    background-color: black;
+    color: white;
+}
+
+.hero__section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    
+}
+
+.hero__section h1{
+    font-size: 3rem;
+}
+
+.hero__section p{
+    font-size: 1.5rem;
+    color: #a8aff7;
+}
+
+.main_section{
+    text-align: center;
+}
+
+.social_section{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.social_section a{
+    color: #a8aff7;
+}
+
+.email_section{
+    padding: 1rem;
+}
+.email_section span{
+    color: #a8aff7;
+    writing-mode: vertical-lr;
+    letter-spacing: 3px;
+    padding-right: 0.5rem;
+}
+
+.nav__container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__container i {
+    display: none;
+}
+
+.nav__container ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__container ul li{
+    padding: 0.4rem;
+}
+.nav__container a{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.nav__container a:hover{
+    color: #a8aff7;
+}
+
+#logos img{
+    width: 25%;
+}
+#logo{
+    background-color: var(--clr-dark);
+    background-image: linear-gradient(to top, #a8aff7 0%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/*ABOUT SECTION*/
+
+.about__container{
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+
+.about_writeup{
+    width: 60%;
+}
+
+.about_writeup h1{
+    color: #a8aff7;
+}
+
+.about_writeup p a{
+    text-decoration: none;
+    color:#a8aff7;
+    transition: all 0.3s ease-in;
+}
+
+.about_writeup p a:hover{
+    color: #949cf8;
+}
+.about__container img{
+    width: 40%;
+    outline: 1rem solid #fff;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.extra_section{
+    background-color: hsla(0, 3%, 40%, 0.1) ;
+    text-align: center;
+    margin-top: 2rem;
+    padding-block: 1.5rem;
+}
+
+.extra_section h2{
+    font-size: 2.2rem;
+}
+
+.extra_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.extra_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+}
+
+.extra_item h4{
+    color: #a8aff7;
+    margin-top: 0.5rem;
+}
+
+.extra_item img{
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.extra_item i {
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+/* PROJECT SECTION */
+
+.sample{
+    margin-top: 4rem;
+}
+.project__container{
+    background: hsla(0, 3%, 40%, 0.1);
+    display: flex;
+    padding-block: 2rem;
+    margin-block-start: 2rem;
+    margin-block-end: 4rem;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.project{
+    width: 350px;
+    text-align: center;
+}
+
+.project a{
+    color: #a8aff7;
+    font-size: 16px;
+}
+
+.view{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* CONTACT SECTION */
+
+.contact__container{
+    display: flex;
+    padding-block: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.contact_info{
+    width: 50%;
+}
+
+.contact_info span{
+    color:#a8aff7;
+    font-weight: 700;
+}
+
+.contact_info p:nth-child(2){
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact_info p{
+    margin-bottom: 1rem;
+}
+
+.contact_info p:nth-child(3){
+    color: hsla(0, 0%, 100%, 0.71);
+    margin-bottom: 5rem;
+}
+
+.contact_info small{
+    margin-top: 5rem;
+}
+.contact_input{
+    width: 50%;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container label{
+    font-weight: 550;
+    margin-bottom: 0.3rem;
+}
+
+.form_container input[type=text],
+.form_container input[type=email]
+{
+    background-color: hsla(0, 3%, 60%, 0.1);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.form_container textarea{
+    background-color: hsla(0, 3%, 60%, 0.1);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.form_container input[type=submit]{
+    background: #fff;
+    color: #00052b;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    width: 20%;
+    padding: 0.3rem 0;
+    cursor: pointer;
+}
+
+footer{
+    background: hsla(0, 3%, 40%, 0.1);
+    margin-top: 2rem;
+    padding-block: 0.3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .nav__container ul{
+        display: none;
+    }
+    
+    .nav__container i{
+        display: block;
+        font-size: 1.8rem;
+    }
+    .hero__section h1{
+        font-size: 2.6rem;
+    }
+
+    .hero__section p{
+        font-size: 1.4rem;
+    }
+
+    /* ABOUT RESPONSIVE SECTION  */
+
+    .about__container{
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .about_writeup{
+        width: 100%;
+    }
+
+    .about__container img{
+        width: 80%;
+    }
+}
