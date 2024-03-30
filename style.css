@@ -407,6 +407,10 @@ footer{
     .contact__container{
         flex-direction: column;
     }
+
+    .contact_info{
+        width: 90%;
+    }
     .contact{
         width: 100%;
     }
